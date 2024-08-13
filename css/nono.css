@@ -1,0 +1,22 @@
+h1{
+ color: white;
+ text-align: center;
+ font-size: xx-large;
+}
+main, p{
+   text-align: left;
+   color: white;
+   font-size: larger;
+   background-color: darkred;
+}
+td{
+   width: 10;
+   font-style: normal;
+   padding-top:25px; 
+   padding-bottom:25px; 
+   border-top: 1px solid black; 
+   border-right: 1px solid black;
+}
+b{
+   color: aliceblue;
+}

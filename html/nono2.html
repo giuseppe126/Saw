@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CENTRO DI CONTATTO</h1>
+    <img src="c:\Users\Peppe\Downloads\1SAW.png" width="400" height="350">
+    <form action="../php/nono.php" method="post">
+      <label for="utente">Nome utente</label>
+      <input type="text" placeholder="nomeutente" id="utente" name="utente">
+      <label for="parere">Cosa pensi della pagina?</label>
+      <select id="parere" name="parere">
+        <option value="bella">Bella</option>
+        <option value="brutta">Brutta</option>
+        <option value="altro">Altro</option>
+      </select>
+      <label for="subject">Se hai selezionato "altro" allora srivi qualcosa che ci aiuterà a migliorare la pagina</label>
+      <textarea placeholder="lascia un feedback" style="height:200px" id="subject" name="subject"></textarea>
+      <input type="submit" value="Invia">
+    </form>
+    <!-- <script>
+      document.querySelector("form").addEventListener("submit", event=>{
+        event.preventDefault()
+        var form=document.querySelector("form")
+        var formData=new FormData(form)
+        fetch(form.action, {
+          method:"POST", 
+          body: formData
+        }).then(response=>{
+          if (response.ok){
+            alert("dati inviati con successo")
+          }else{
+            alert("errore"+response.status)
+          }
+        })
+      })
+    </script> -->
+</body>
+</html>
